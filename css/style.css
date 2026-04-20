@@ -4,8 +4,6 @@
   .red--box {
     width: 200px;
     height: 200px;
-    background: #ff0000;
-    margin: 0 auto;
   }
 }
 
@@ -18,10 +16,7 @@
 
 @media screen and (max-width: 960px) {
   .color--box {
-    width: 300px;
-    height: 300px;
     background: #007bff;
-    margin: 0 auto;
   }
 }
 
@@ -33,30 +28,11 @@
 }
 
 @media screen and (max-width: 960px) {
-  .margin--box {
-    display: flex;
-    justify-content: center;
-  }
-
   .blue--box,
   .green--box {
-    display: inline-block;
     margin: 0 50px;
   }
-
-  .blue--box {
-    width: 300px;
-    height: 300px;
-    background: #0008ff;
-  }
-
-  .green--box {
-    width: 300px;
-    height: 300px;
-    background: #22ff00;
-  }
 }
-
 
 .margin--box {
   display: flex;
@@ -256,12 +232,6 @@
 }
 
 @media screen and (max-width: 960px) {
-  .show--hide--box {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
   .show--hide--red--box {
     display: none;
     width: 300px;
@@ -276,15 +246,6 @@
     width: 300px;
     height: 300px;
     background: #0008ff;
-  }
-
-  .show--hide--green--box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 300px;
-    height: 300px;
-    background: #00ff51;
   }
 }
 
