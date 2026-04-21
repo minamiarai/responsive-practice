@@ -35,13 +35,13 @@
 .blue--box,
 .green--box {
   display: inline-block;
-  margin: 0 150px;
 }
 
 .blue--box {
   width: 300px;
   height: 300px;
   background: #0008ff;
+  margin-right: 150px;
 }
 
 .green--box {
@@ -51,9 +51,8 @@
 }
 
 @media screen and (max-width: 960px) {
-  .blue--box,
-  .green--box {
-    margin: 0 50px;
+  .blue--box {
+    margin-right: 50px;
   }
 }
 
@@ -77,23 +76,18 @@
 }
 
 @media screen and (max-width: 960px) {
-  .float--red--box {
-    width: 300px;
-    height: 300px;
-    background: #ff0000;
 
-    .float--blue--box {
-      width: 300px;
-      height: 300px;
-      background: #0008ff;
-    }
+  .float--red--box,
+  .float--blue--box {
+    float: none;
   }
 }
 
 .reverse--box {
   display: flex;
-  align-items: center;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
 }
 
 .red--reverse--box {
@@ -125,39 +119,8 @@
 
 @media screen and (max-width: 960px) {
   .reverse--box {
-    display: flex;
     flex-direction: row-reverse;
-    align-items: center;
-    justify-content: center;
   }
-
-  .red--reverse--box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 300px;
-    height: 300px;
-    background: #ff0000;
-  }
-
-  .blue--reverse--box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 300px;
-    height: 300px;
-    background: #0008ff;
-  }
-
-  .orange--reverse--box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 300px;
-    height: 300px;
-    background: #ff8400;
-  }
-
 }
 
 .designation--box {
@@ -194,40 +157,16 @@
 }
 
 @media screen and (max-width: 960px) {
-  .designation--box {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
   .lightgreen--box {
     order: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 300px;
-    height: 300px;
-    background: #00ff51;
   }
 
   .yellow--box {
     order: 2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 300px;
-    height: 300px;
-    background: #d4ff00;
   }
 
   .pink--box {
     order: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 300px;
-    height: 300px;
-    background: #ff00e1;
   }
 }
 
@@ -265,17 +204,9 @@
 @media screen and (max-width: 960px) {
   .show--hide--red--box {
     display: none;
-    width: 300px;
-    height: 300px;
-    background: #ff0000;
   }
 
   .show--hide--blue--box {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 300px;
-    height: 300px;
-    background: #0008ff;
   }
 }
