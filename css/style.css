@@ -57,11 +57,12 @@
 }
 
 .float--box {
-  display: flex;
-  justify-content: center;
+  position: relative;
+  overflow: hidden;
 }
 
 .float--red--box {
+  position: relative;
   width: 300px;
   height: 300px;
   background: #ff0000;
@@ -69,6 +70,7 @@
 }
 
 .float--blue--box {
+  position: relative;
   width: 300px;
   height: 300px;
   background: #0008ff;
@@ -136,6 +138,7 @@
   width: 300px;
   height: 300px;
   background: #00ff51;
+  order: 0;
 }
 
 .yellow--box {
@@ -145,6 +148,7 @@
   width: 300px;
   height: 300px;
   background: #d4ff00;
+  order: 1;
 }
 
 .pink--box {
@@ -154,6 +158,7 @@
   width: 300px;
   height: 300px;
   background: #ff00e1;
+  order: 2;
 }
 
 @media screen and (max-width: 960px) {
